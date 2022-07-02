@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.blue[800],
       bottomNavigationBar: BottomNavigationBar(
-        items: [
+        items: const [
           BottomNavigationBarItem(label: '', icon: Icon(Icons.home)),
           BottomNavigationBarItem(label: '', icon: Icon(Icons.message)),
           BottomNavigationBarItem(label: '', icon: Icon(Icons.person))
@@ -124,7 +124,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       // bad
                       Column(
-                        children: [
+                        children: const [
                           EmoticonFace(
                             emoticonFace: '😩',
                           ),
@@ -139,7 +139,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       // fine
                       Column(
-                        children: [
+                        children: const [
                           EmoticonFace(
                             emoticonFace: '🙂',
                           ),
@@ -154,7 +154,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       // well
                       Column(
-                        children: [
+                        children: const [
                           EmoticonFace(
                             emoticonFace: '😊',
                           ),
@@ -169,7 +169,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       // excelent
                       Column(
-                        children: [
+                        children: const [
                           EmoticonFace(
                             emoticonFace: '🥳',
                           ),
@@ -193,7 +193,7 @@ class _HomePageState extends State<HomePage> {
             ),
             Expanded(
               child: Container(
-                padding: EdgeInsets.all(25),
+                padding: const EdgeInsets.all(25),
                 color: Colors.grey[200],
                 child: Center(
                   child: Column(
@@ -201,7 +201,7 @@ class _HomePageState extends State<HomePage> {
                       //  Exercices Heading
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Text(
                             'Exercices',
                             style: TextStyle(
@@ -210,13 +210,13 @@ class _HomePageState extends State<HomePage> {
                           Icon(Icons.more_horiz)
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       //  Exercices Heading
                       Expanded(
                         child: ListView(
-                          children: [
+                          children: const [
                             ExcercicesTitle(
                               numberOfExcercices: '17',
                               excercicesName: "Speaking Skills",

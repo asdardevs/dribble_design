@@ -17,7 +17,7 @@ class ExcercicesTitle extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 8),
       child: Container(
-        padding: EdgeInsets.all(12),
+        padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
             color: Colors.white, borderRadius: BorderRadius.circular(16)),
         child: Row(
@@ -28,14 +28,14 @@ class ExcercicesTitle extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(12),
                   child: Container(
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       color: color,
                       child: Icon(
                         icon,
                         color: Colors.white,
                       )),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 12,
                 ),
                 Column(
@@ -45,15 +45,15 @@ class ExcercicesTitle extends StatelessWidget {
                     Text(
                       excercicesName,
                       style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                          const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                     ),
                     // subtitle
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                     Text(
                       '$numberOfExcercices Exercices',
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontSize: 14,
                           color: Colors.grey,
                           fontWeight: FontWeight.bold),
@@ -62,7 +62,7 @@ class ExcercicesTitle extends StatelessWidget {
                 ),
               ],
             ),
-            Icon(Icons.more_horiz)
+            const Icon(Icons.more_horiz)
           ],
         ),
       ),

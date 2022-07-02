@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class EmoticonFace extends StatelessWidget {
   final String emoticonFace;
@@ -17,7 +15,7 @@ class EmoticonFace extends StatelessWidget {
         child: Center(
             child: Text(
           emoticonFace,
-          style: TextStyle(fontSize: 25),
+          style: const TextStyle(fontSize: 25),
         )));
   }
 }
